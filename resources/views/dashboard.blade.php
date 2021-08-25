@@ -111,7 +111,7 @@
                         </div>
                         <div class="col-12 col-md-10 col-lg-8 text-center my-form" id="my-form">
                             @csrf
-                            <p>4.-Sabemos en qué están trabajando los otros miembros del equipo y cómo contribuyen a los objetivos comunes del equipo.</p>
+                            <p>4.-Sabemos en qué están trabajando los otros miembros del equipo y cómo contribuyen a los objetivos comunes.</p>
 
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="option4" id="inlineRadio1" value="1">
@@ -461,7 +461,7 @@
                         </div>
                         <div class="col-12 col-md-10 col-lg-8 text-center my-form" id="my-form">
                             @csrf
-                            <p>18.-Terminamos nuestros debates y reuniones con resoluciones claras y específicas y la decisión de actuar.</p>
+                            <p>18.-Terminamos nuestros debates y reuniones con resoluciones claras, específicas y con un plan de acción.</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="option18" id="inlineRadio1" value="1">
                                 <label class="form-check-label" for="inlineRadio1">nunca</label>
@@ -605,7 +605,7 @@
                         </div>
                         <div class="col-12 col-md-10 col-lg-8 text-center my-form" id="my-form">
                             @csrf
-                            <p>24.-Gestionamos los conflictos de manera positiva, para ayudarnos unos a otros.</p>
+                            <p>24.-Gestionamos los conflictos de manera positiva para ayudarnos unos a otros, promoviendo el aprendizaje conjunto.</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="option24" id="inlineRadio1" value="1">
                                 <label class="form-check-label" for="inlineRadio1">nunca</label>

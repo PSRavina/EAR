@@ -29,9 +29,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::middleware(['auth:sanctum', 'verified'])->post('/dashboard', [App\Http\Controllers\SurveyController::class, 'send']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/completereport', function () {
-    return Excel::download(new RequestFormulary, 'CompleteReport.xlsx');
+    return Excel::download(new RequestFormulary, 'ReporteCompleto.xlsx');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/items', function () {
-    return Excel::download(new AverageItems, 'items.xlsx');
+    return Excel::download(new AverageItems, 'MediasPorBloques.xlsx');
 });

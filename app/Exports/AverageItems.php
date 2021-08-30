@@ -3,28 +3,33 @@
 namespace App\Exports;
 
 use App\Models\Survey;
-use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Row;
+use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Concerns\WithTitle;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\FromCollection;
 
-class AverageItems implements FromCollection, WithHeadings
+class AverageItems implements FromCollection, WithHeadings, WithTitle
 {
     /**
      * @return \Illuminate\Support\Collection
      * 
      */
+    public function title(): string
+    {
+        return 'Resultados del grupo por bloques';
+    }
 
     public function headings(): array
     {
         return [
             'C.Común',
             'Confianza',
-            'G.Conflictos',
+            'GP.Conflictos',
             'Compromiso',
             'Corresponsabilidad',
-            'Oresultados',
-            'Orelaciones'
+            'O.Resultados',
+            'O.Relaciones'
         ];
     }
     
